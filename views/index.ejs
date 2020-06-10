@@ -1,0 +1,109 @@
+<%- include("partials/header") -%>
+
+<section class="colored-section" id="title">
+
+  <div class="container-fluid">
+
+    <!-- Nav Bar -->
+    <%-include("partials/navbar")-%>
+
+
+
+    <!-- Title -->
+
+    <div class="row">
+
+      <div class="col-lg-6">
+        <h1 class="big-heading">All the restaurants in one place!</h1>
+      </div>
+
+      <div class="col-lg-6">
+        <img class="title-image" src="/images/burger.png" alt="burger">
+      </div>
+
+    </div>
+
+    <div class="search-bar">
+      <form action="/" method="post">
+        <div class="round p-1 bg-light shadow-sm mb-4">
+          <div class="input-group">
+            <input type="text" name="searchbox" autocomplete="off" style="text-transform:capitalize;" placeholder="Enter your city..." aria-describedby="button-addon1" class="round form-control border-0 bg-light">
+            <div class="input-group-append">
+              <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search find"></i></button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+
+  </div>
+
+</section>
+
+
+<!-- Features -->
+
+<section class="white-section" id="features">
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-utensils fa-4x"></i>
+        <h3 class="feature-title">Best food for you.</h3>
+        <p>Hungry? Find nearby best, enjoy ur favourites.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-map-marker-alt fa-4x"></i>
+        <h3 class="feature-title">Easy to locate.</h3>
+        <p>Find your favourite food in nearby restaurants.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-heart fa-4x"></i>
+        <h3 class="feature-title">Best food for you.</h3>
+        <p>Find the love of your foody life or your money back.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Testimonials -->
+
+<section class="colored-section" id="testimonials">
+
+  <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active container-fluid">
+        <h2 class="testimonial-text">“All you need is love. But a little chocolate now and then doesn't hurt.”</h2>
+        <em id="right">― Charles M. Schulz</em>
+      </div>
+      <div class="carousel-item container-fluid">
+        <h2 class="testimonial-text">“If more of us valued food and cheer and song above hoarded gold, it would be a merrier world.”</h2>
+        <em id="right">― J.R.R. Tolkien</em>
+      </div>
+      <div class="carousel-item container-fluid">
+        <h2 class="testimonial-text">“One cannot think well, love well, sleep well, if one has not dined well.”</h2>
+        <em id="right">― Virginia Woolf, A Room of One's Own</em>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+</section>
+
+
+<!-- Download -->
+
+<%-include("partials/download")-%>
+
+<%- include("partials/footer") -%>
