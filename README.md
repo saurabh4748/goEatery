@@ -1,2 +1,8 @@
 # goEatery
-Restaurant Finder using node.js ZomatoAPI Zomato Mailchimp Google login express ejs
+
+### Restaurant Finder
+- node.js
+- ZomatoAPI
+- Mailchimp
+- Google-login
+- Express Ejs
