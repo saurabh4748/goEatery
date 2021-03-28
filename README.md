@@ -3,7 +3,7 @@
 Website provides information of the best restaurants in select cities and login page with Google and Mailchimp API.
 
 ### Restaurant Finder
-- node.js
+- Node.js
 - ZomatoAPI
 - Mailchimp
 - Google-login
