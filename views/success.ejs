@@ -1,0 +1,23 @@
+<%- include("partials/header") -%>
+
+    <div class="jumbotron">
+  <h1 class="display-4">Awesome!</h1>
+  <p class="lead">You're Successfully signed up to the goEatery, look forwards to lot of new contents.</p>
+  <p class="lead">
+    <a id="home" class="btn btn-primary btn-lg" href="/" role="button">HOME
+    <div class="g-signin2" data-onsuccess="onSignIn"></div></a>
+  </p>
+</div>
+<button onclick="signOut()">Sign Out</button>
+  </body>
+<script>
+  function onSignIn(){
+    res.render("success.ejs");
+  }
+  function signOut(){
+  gapi.auth2.getAuthInstance().signOut().then(function(){
+ 		console.log('user signed out')
+ 	})
+ }
+ </script>
+</html>
